@@ -307,3 +307,20 @@ mkdir lab4
 tree
 clear
 git init 
+git init
+git remote add origin git@github.com:MI-jerng/TPOS.git
+git add .
+git commit -m "test"
+git config --global user.email "chimoengiphone@gmail.com"
+git config --global user.name "Mi-jerng"
+git add .
+git commit -m "test"
+git push 
+git branch TP
+git status
+git checkout TP
+git status 
+git add .
+git commit -m "test"
+git push -u origin TP
+ls -al ~/.ssh
