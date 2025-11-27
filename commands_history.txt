@@ -1,0 +1,50 @@
+  326  ls -al ~/.ssh
+  327  git init 
+  328  git status
+  329  git add .
+  330  git commit -m "test"
+  331  git push -u origin TP
+  332  ls -al ~/.ssh
+  333  ssh-keygen -t ed25519 -C "chimoengiphone@gmail.com"
+  334  eval "$(ssh-agent -s)"
+  335  ssh-add ~/.ssh/id_ed25519
+  336  cat ~/.ssh/id_ed25519.pub
+  337  rm ~/.ssh/id_ed25519 ~/.ssh/id_ed25519.pub
+  338  git remote -v
+  339  git remote set-url origin https://github.com/MI-jerng/TPOS.git
+  340  git remote -v
+  341  git push -u origin TP
+  342  git remote set-url origin https://github.com/MI-jerng/TPOS.git
+  343  git remote -v
+  344  git push -u origin TP
+  345  git credential-cache exit
+  346  git config --global --unset credential.helper
+  347  rm ~/.git-credentials
+  348  git push -u origin TP
+  349  git remote -v
+  350  clear
+  351  tree
+  352  ls -l ~ > ~/lab4/contents.txt
+  353  sort contents.txt >> contents-sorted.txt
+  354  tree
+  355  cd lab4
+  356  sort contents.txt >> contents-sorted.txt
+  357  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  358  cd
+  359  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  360  cd lab4
+  361  mkdir Documents
+  362  cd
+  363  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  364  wc -w < contents.txt >> ~/lab4/filed2.txt
+  365  cd lab4
+  366  wc -w < contents.txt >> ~/lab4/filed2.txt
+  367  cd
+  368  tree
+  369  head -n 5 /etc/passwd | sort -r
+  370  tail -n 9 contents.txt | wc -m
+  371  cd lab4
+  372  tail -n 9 contents.txt | wc -m
+  373  find /usr/share -name test
+  374  tree
+  375  history | tail -n 50 > ~/commands_history.txt
